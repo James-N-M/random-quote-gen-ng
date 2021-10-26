@@ -1,0 +1,29 @@
+<nav>
+  <app-transparent-button
+    [label]="'random'"
+    [icon]="'autorenew'"
+    (onClick)="getRandomQuote()"
+  ></app-transparent-button>
+</nav>
+
+<div
+  *ngIf="!isShowingAuthorQuotes"
+  style="margin-top: 175px;"
+  >
+  <app-quote
+    [quote]="quote.quoteText"
+  ></app-quote>
+
+  <app-author-card
+    [author]="quote.quoteAuthor"
+    [genre]="quote.quoteGenre"
+    (toggled)="onIsShowingAuthorQuotesToggle()"
+  >
+  </app-author-card>
+</div>
+
+<app-author-quotes
+  *ngIf="isShowingAuthorQuotes"
+  [author]="quote.quoteAuthor"
+  >
+</app-author-quotes>

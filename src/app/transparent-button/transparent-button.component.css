@@ -1,0 +1,19 @@
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: 'Raleway';
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #333333;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+button > span {
+  margin-left: 11px;
+}

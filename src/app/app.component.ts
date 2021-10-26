@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoadingService } from './loading.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'random-quote-generator';
+  loading$ = this.loader.loading$;
+
+  title = "Random Quote Generator";
+
+  constructor(public loader: LoadingService) {}
 }

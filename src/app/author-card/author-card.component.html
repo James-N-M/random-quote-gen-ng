@@ -1,0 +1,17 @@
+<div class="author-card" (click)="toggleIsShowingAuthorQuotes()">
+  <div>
+    <h2 class="author">{{ author }}</h2>
+    <p class="genre">{{ genre }}</p>
+  </div>
+  <div>
+    <!-- <app-transparent-button
+      class="btn"
+      [icon]="'arrow_right_alt'"
+    ></app-transparent-button> -->
+    <button class="btn-transparent"
+      (click)="toggleIsShowingAuthorQuotes()"
+    >
+      <span style="color: #F2F2F2; font-size: 2rem;" class="material-icons">arrow_right_alt</span>
+    </button>
+  </div>
+</div>

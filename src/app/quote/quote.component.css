@@ -1,0 +1,14 @@
+.quote {
+  border-left: 8px solid #F7DF94;
+  padding-left: 99px;
+  width: 614px;
+  margin: auto;
+}
+
+.quote-text {
+  font-family: 'Raleway';
+  font-size: 36px;
+  line-height: 43.2px;
+  color: #000000;
+  text-align: left;
+}

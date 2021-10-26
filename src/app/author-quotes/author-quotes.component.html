@@ -1,0 +1,10 @@
+<div>
+  <h2>{{ author }}</h2>
+  <div class="quote-container"
+    *ngFor="let quote of authorQuotes"
+  >
+    <app-quote
+      [quote]="quote.quoteText"
+    ></app-quote>
+  </div>
+</div>

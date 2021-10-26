@@ -1,0 +1,45 @@
+.btn-transparent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.author-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 109px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #333333;
+  width: 580px;
+  height: 151px;
+  cursor: pointer;
+}
+
+.author-card > * .author {
+  font-family: 'Raleway';
+  font-weight: 700;
+  line-height: 28.18px;
+  color: #F2F2F2;
+  margin: 0px;
+}
+
+.author-card > * .genre {
+  font-family: 'Raleway';
+  font-size: 14px;
+  line-height: 16.44px;
+  color: #828282;
+  margin-top: 8px;
+}
+
+btn {
+  color: #F2F2F2;
+   font-size: 2rem;
+}
